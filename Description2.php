@@ -28,11 +28,14 @@ if ( !defined( 'MEDIAWIKI' ) ) die( "This is an extension to the MediaWiki packa
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'Description2',
-	'version' => "0.1",
+	'version' => '0.1.1',
 	'author' => 'Daniel Friesen',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:Description2',
-	'description' => 'Adds a description meta-tag to MW pages and into the ParserOutput for other extensions to use',
+	'descriptionmsg' => 'description2-desc',
 );
+
+$dir = dirname( __FILE__ );
+$wgExtensionMessagesFiles['Description2'] = $dir . '/Description2.i18n.php';
 
 $wgHooks['ParserAfterTidy'][] = 'egDescription2ParserAfterTidy';
 function egDescription2ParserAfterTidy( &$parser, &$text ) {
