@@ -43,6 +43,13 @@ $messages['fr'] = array(
 	'description2-desc' => 'Ajoute une méta-étiquette de description aux pages de MediaWiki et à ParserOutput pour les autres extensions à utiliser',
 );
 
+/** Galician (Galego)
+ * @author Toliño
+ */
+$messages['gl'] = array(
+	'description2-desc' => 'Engade unha etiqueta de descrición ás páxinas de MediaWiki e ao ParserOutput para as outras extensións a usar',
+);
+
 /** Swiss German (Alemannisch)
  * @author Als-Holder
  */
