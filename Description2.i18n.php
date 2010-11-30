@@ -57,6 +57,13 @@ $messages['gsw'] = array(
 	'description2-desc' => 'Fiegt s Meta-Elemänt „description“ yyne in MediaWiki-Syte un in d Parseruusgab fir zuesätzligei Erwyterige',
 );
 
+/** Hebrew (עברית)
+ * @author YaronSh
+ */
+$messages['he'] = array(
+	'description2-desc' => 'הוספת תגית על לתיאור לדפי מדיה־ויקי ואל ה־ParserOutput לשימוש הרחבות אחרות',
+);
+
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
@@ -83,6 +90,13 @@ $messages['id'] = array(
  */
 $messages['mk'] = array(
 	'description2-desc' => 'Додава метаознака за опис во страници на МедијаВики и во парсерски извод (ParserOutput) за употреба од други додатоци',
+);
+
+/** Dutch (Nederlands)
+ * @author Siebrand
+ */
+$messages['nl'] = array(
+	'description2-desc' => "Voegt een metalabel in de beschrijving van MediaWikipagina's toe en in de parseruitvoer om door extensies te laten gebruiken",
 );
 
 /** Polish (Polski)
