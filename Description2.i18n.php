@@ -36,6 +36,13 @@ $messages['de'] = array(
 	'description2-desc' => 'Fügt dem Seitenquelltext das Meta-Element „description“ hinzu sowie zusätzlich zur Nutzung durch andere Softwareerweiterungen der Parserausgabe',
 );
 
+/** Lower Sorbian (Dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'description2-desc' => 'Pśidawa metatoflicku "description" bokam MediaWiki a do ParserOutput za wužywanje drugich rozšyrjenjow',
+);
+
 /** French (Français)
  * @author Peter17
  */
@@ -90,6 +97,13 @@ $messages['id'] = array(
  */
 $messages['ja'] = array(
 	'description2-desc' => 'MediaWikiのページとほかの拡張機能が利用するParserOutpuに「description」メタタグを追加',
+);
+
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'description2-desc' => 'Setzt e Meta-Tag Beschreiwung op MediaWiki-Säiten an a ParserOutput fir déi aner Erweiderungen déi benotzt ginn',
 );
 
 /** Macedonian (Македонски)
