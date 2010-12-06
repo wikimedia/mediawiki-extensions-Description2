@@ -29,6 +29,13 @@ $messages['br'] = array(
 	'description2-desc' => 'Ouzhpennañ a ra un deskrivadur meta-tikedennet da bajennoù MediaWiki hag er Parser Output da vezañ implijet gant astennoù all',
 );
 
+/** Bosnian (Bosanski)
+ * @author CERminator
+ */
+$messages['bs'] = array(
+	'description2-desc' => 'Dodaje opisnu meta-oznaku na MediaWiki stranice i u parserski izlaz (ParserOutput) za korištenje od strane drugih proširenja',
+);
+
 /** German (Deutsch)
  * @author Kghbln
  */
