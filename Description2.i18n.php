@@ -127,6 +127,13 @@ $messages['nl'] = array(
 	'description2-desc' => "Voegt een metalabel in de beschrijving van MediaWikipagina's toe en in de parseruitvoer om door extensies te laten gebruiken",
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Nghtwlkr
+ */
+$messages['no'] = array(
+	'description2-desc' => 'Legger til en beskrivelses-meta-merkelapp til MediaWiki-sider og inn i ParserOutput for bruk i andre utvidelser',
+);
+
 /** Polish (Polski)
  * @author Sp5uhe
  */
