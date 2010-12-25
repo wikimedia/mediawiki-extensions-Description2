@@ -110,7 +110,7 @@ $messages['ja'] = array(
  * @author Robby
  */
 $messages['lb'] = array(
-	'description2-desc' => 'Setzt e Meta-Tag Beschreiwung op MediaWiki-Säiten an a ParserOutput fir déi aner Erweiderungen déi benotzt ginn',
+	'description2-desc' => 'Setzt e Meta-Tag Beschreiwung op MediaWiki-Säiten an e ParserOutput fir déi aner Erweiderungen déi benotzt ginn',
 );
 
 /** Macedonian (Македонски)
