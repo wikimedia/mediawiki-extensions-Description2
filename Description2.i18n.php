@@ -169,3 +169,10 @@ $messages['ru'] = array(
 	'description2-desc' => 'Добавляет описательный мета-тег для страниц MediaWiki и ParserOutput, для использования в других расширениях',
 );
 
+/** Simplified Chinese (‪中文(简体)‬)
+ * @author Hydra
+ */
+$messages['zh-hans'] = array(
+	'description2-desc' => '将说明元标记添加到定制页到使用其他扩展名为 ParserOutput',
+);
+
