@@ -15,7 +15,7 @@ $messages['en'] = array(
 	'description2-desc' => 'Adds a description meta-tag to MediaWiki pages and into the ParserOutput for other extensions to use',
 );
 
-/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author Jim-by
  */
 $messages['be-tarask'] = array(
