@@ -28,7 +28,7 @@ if ( !defined( 'MEDIAWIKI' ) ) die( "This is an extension to the MediaWiki packa
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'Description2',
-	'version' => '0.1.1',
+	'version' => '0.2',
 	'author' => 'Daniel Friesen',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:Description2',
 	'descriptionmsg' => 'description2-desc',
@@ -36,6 +36,16 @@ $wgExtensionCredits['other'][] = array(
 
 $dir = dirname( __FILE__ );
 $wgExtensionMessagesFiles['Description2'] = $dir . '/Description2.i18n.php';
+$wgExtensionMessagesFiles['Description2Magic'] = $dir . '/Description2.i18n.magic.php';
+
+function efDescription2SetDescription( $parser, $desc ) {
+	$pOut = $parser->getOutput();
+	if ( $pOut->getProperty("description") !== false ) {
+		return;
+	}
+	$pOut->setProperty("description", $desc);
+	$pOut->addOutputHook("setdescription");
+}
 
 $wgHooks['ParserAfterTidy'][] = 'egDescription2ParserAfterTidy';
 function egDescription2ParserAfterTidy( &$parser, &$text ) {
@@ -56,12 +66,35 @@ function egDescription2ParserAfterTidy( &$parser, &$text ) {
 	}
 	
 	if ( $desc ) {
-		$pOut = $parser->getOutput();
-		$pOut->setProperty("description", $desc);
-		$pOut->addOutputHook("setdescription");
+		efDescription2SetDescription( $parser, $desc );
 	}
 	
 	return true;
+}
+
+$wgHooks['ParserFirstCallInit'][] = array( 'efDescription2RegisterParser' ); 
+function efDescription2RegisterParser( &$parser ) {
+	global $wgEnableMetaDescriptionFunctions;
+	if ( !$wgEnableMetaDescriptionFunctions ) {
+		// Functions and tags are disabled
+		return true;
+	}
+	$parser->setFunctionHook( 'description2', 'efDescription2Function', Parser::SFH_OBJECT_ARGS );
+	$parser->setFunctionTagHook( 'metadesc', 'efDescription2Tag', Parser::SFH_OBJECT_ARGS );
+	return true;
+}
+
+function efDescription2Function( $parser, $frame, $args ) {
+	$desc = isset( $args[0] ) ? $frame->expand( $args[0] ) : '';
+	efDescription2SetDescription( $parser, $desc );
+	return '';
+}
+function efDescription2Tag( $parser, $frame, $content, $attributes ) {
+	$desc = (isset( $content ) ? $content : (isset($attributes["content"]) ? $attributes["content"] : null));
+	if ( isset($desc) ) {
+		efDescription2SetDescription( $parser, $desc );
+	}
+	return '';
 }
 
 $wgParserOutputHooks['setdescription'] = 'egDescription2ParserOutputSetDescription';
@@ -76,4 +109,8 @@ function egDescription2PageHook( &$out, &$sk ) {
 		$out->addMeta("description", $out->mDescription);
 	return true;
 }
+
+
+## Configuration
+$wgEnableMetaDescriptionFunctions = false;
 
