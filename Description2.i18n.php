@@ -15,6 +15,13 @@ $messages['en'] = array(
 	'description2-desc' => 'Adds a description meta-tag to MediaWiki pages and into the ParserOutput for other extensions to use',
 );
 
+/** Message documentation (Message documentation)
+ * @author Purodha
+ */
+$messages['qqq'] = array(
+	'description2-desc' => '{{desc}}',
+);
+
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author Jim-by
  */
@@ -104,6 +111,13 @@ $messages['id'] = array(
  */
 $messages['ja'] = array(
 	'description2-desc' => 'MediaWikiのページとほかの拡張機能が利用するParserOutpuに「description」メタタグを追加',
+);
+
+/** Colognian (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'description2-desc' => 'Deiht ene <code lang="en">meta</code>-Befähl met <code lang="en">description</code> en dat <code lang="en">html</code> vun dem Wiki sing Sigge un, domet ander Zohsaztprojramme et bruche künne, och en dem <i lang="en">parser</i> sing Ußjaabe.',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
