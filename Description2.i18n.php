@@ -156,10 +156,11 @@ $messages['pl'] = array(
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Dragonòt
  */
 $messages['pms'] = array(
-	'description2-desc' => "A gionta un meta-tag ëd descrission a le pàgine ëd mediaWikie ant ël ParserOutput për j'àutre estension da dovré",
+	'description2-desc' => "A gionta na meta-tichëtta ëd descrission a le pàgine ëd MediaWiki ant ël ParserOutput për j'àutre estension da dovré",
 );
 
 /** Portuguese (Português)
