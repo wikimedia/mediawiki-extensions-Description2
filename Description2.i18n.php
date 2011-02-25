@@ -127,6 +127,13 @@ $messages['lb'] = array(
 	'description2-desc' => 'Setzt e Meta-Tag Beschreiwung op MediaWiki-Säiten an e ParserOutput fir déi aner Erweiderungen déi benotzt ginn',
 );
 
+/** Malagasy (Malagasy)
+ * @author Jagwar
+ */
+$messages['mg'] = array(
+	'description2-desc' => "Mampanampy meta-tag famisavisana amin'ny pejy MediaWiki ary amin'i ParserOutput ho an'ny fanitarana hafa hampiasaina",
+);
+
 /** Macedonian (Македонски)
  * @author Bjankuloski06
  */
