@@ -57,6 +57,13 @@ $messages['dsb'] = array(
 	'description2-desc' => 'Pśidawa metatoflicku "description" bokam MediaWiki a do ParserOutput za wužywanje drugich rozšyrjenjow',
 );
 
+/** Basque (Euskara)
+ * @author Theklan
+ */
+$messages['eu'] = array(
+	'description2-desc' => 'Deskripzio meta-etiketa bat gehitzen die MediaWiki orrialdeei eta ParserOutput-en barruan beste estentsioek erabil dezaten',
+);
+
 /** French (Français)
  * @author Peter17
  */
@@ -189,6 +196,13 @@ $messages['pt-br'] = array(
  */
 $messages['ru'] = array(
 	'description2-desc' => 'Добавляет описательный мета-тег для страниц MediaWiki и ParserOutput, для использования в других расширениях',
+);
+
+/** Tagalog (Tagalog)
+ * @author AnakngAraw
+ */
+$messages['tl'] = array(
+	'description2-desc' => 'Nagdaragdag ng isang paglalarawan ng tatak ng meta sa mga pahina ng MediaWiki at papaloob sa ParserOutput para sa ibang mga dugtong na gagamitin',
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
