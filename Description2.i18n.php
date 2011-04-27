@@ -191,6 +191,13 @@ $messages['pt-br'] = array(
 	'description2-desc' => 'Adiciona uma meta tag de descrição às páginas do MediaWiki e ao ParserOutput (isto é, à saída do Analisador Sintático) para uso por outras extensões',
 );
 
+/** Tarandíne (Tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'description2-desc' => "Aggiunge 'nu meta-tag de descrizione a le pàggene de MediaUicchi e jndr'à 'u ParserOutput pe otre estenziune da ausà",
+);
+
 /** Russian (Русский)
  * @author Александр Сигачёв
  */
