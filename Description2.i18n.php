@@ -22,6 +22,13 @@ $messages['qqq'] = array(
 	'description2-desc' => '{{desc}}',
 );
 
+/** Asturian (Asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'description2-desc' => 'Amiesta una etiqueta de descripción a les páxines de MediaWiki y a ParserOutput pa que la usen otres estensiones',
+);
+
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author Jim-by
  */
