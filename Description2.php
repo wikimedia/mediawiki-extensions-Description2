@@ -49,7 +49,6 @@ function efDescription2SetDescription( $parser, $desc ) {
 
 $wgHooks['ParserAfterTidy'][] = 'egDescription2ParserAfterTidy';
 function egDescription2ParserAfterTidy( &$parser, &$text ) {
-	global $wgContLang;
 	$desc = '';
 	
 	$myText = preg_replace('%<table\b[^>]*+>(?:(?R)|[^<]*+(?:(?!</?table\b)<[^<]*+)*+)*+</table>%i', '', $text);
