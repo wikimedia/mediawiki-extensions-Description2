@@ -155,6 +155,13 @@ $messages['mk'] = array(
 	'description2-desc' => 'Додава метаознака за опис во страници на МедијаВики и во парсерски извод (ParserOutput) за употреба од други додатоци',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'description2-desc' => 'Membubuh meta-tag penerangan pada laman-laman MediaWiki dan ke dalam ParserOutput untuk digunakan oleh sambungan lain',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
