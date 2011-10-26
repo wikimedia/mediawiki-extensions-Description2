@@ -50,6 +50,13 @@ $messages['bs'] = array(
 	'description2-desc' => 'Dodaje opisnu meta-oznaku na MediaWiki stranice i u parserski izlaz (ParserOutput) za korištenje od strane drugih proširenja',
 );
 
+/** Welsh (Cymraeg)
+ * @author Pwyll
+ */
+$messages['cy'] = array(
+	'description2-desc' => "Yn ychwanegu tag-meta disgrifiadol i dudalennau MediaWiki ac yn y ParserOutput i'w ddefnyddio gan estyniadau eraill.",
+);
+
 /** German (Deutsch)
  * @author Kghbln
  */
