@@ -30,7 +30,7 @@ $wgExtensionCredits['other'][] = array(
 	'name' => 'Description2',
 	'version' => '0.2',
 	'author' => 'Daniel Friesen',
-	'url' => 'http://www.mediawiki.org/wiki/Extension:Description2',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:Description2',
 	'descriptionmsg' => 'description2-desc',
 );
 
