@@ -240,3 +240,8 @@ $messages['zh-hans'] = array(
 	'description2-desc' => '将说明元标记添加到定制页到使用其他扩展名为 ParserOutput',
 );
 
+/** Traditional Chinese (‪中文(繁體)‬) */
+$messages['zh-hant'] = array(
+	'description2-desc' => '將說明元標記添加到定製頁到使用其他擴展名為 ParserOutput',
+);
+
