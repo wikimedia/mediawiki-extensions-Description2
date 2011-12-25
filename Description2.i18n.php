@@ -169,18 +169,18 @@ $messages['ms'] = array(
 	'description2-desc' => 'Membubuh meta-tag penerangan pada laman-laman MediaWiki dan ke dalam ParserOutput untuk digunakan oleh sambungan lain',
 );
 
-/** Dutch (Nederlands)
- * @author Siebrand
- */
-$messages['nl'] = array(
-	'description2-desc' => "Voegt een metalabel in de beschrijving van MediaWikipagina's toe en in de parseruitvoer om door extensies te laten gebruiken",
-);
-
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
 	'description2-desc' => 'Legger til en beskrivelses-meta-merkelapp til MediaWiki-sider og inn i ParserOutput for bruk i andre utvidelser',
+);
+
+/** Dutch (Nederlands)
+ * @author Siebrand
+ */
+$messages['nl'] = array(
+	'description2-desc' => "Voegt een metalabel in de beschrijving van MediaWikipagina's toe en in de parseruitvoer om door extensies te laten gebruiken",
 );
 
 /** Polish (Polski)
