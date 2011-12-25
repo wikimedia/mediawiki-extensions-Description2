@@ -179,7 +179,7 @@ $messages['nl'] = array(
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Nghtwlkr
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'description2-desc' => 'Legger til en beskrivelses-meta-merkelapp til MediaWiki-sider og inn i ParserOutput for bruk i andre utvidelser',
 );
 
