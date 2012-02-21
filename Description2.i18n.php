@@ -71,6 +71,13 @@ $messages['dsb'] = array(
 	'description2-desc' => 'Pśidawa metatoflicku "description" bokam MediaWiki a do ParserOutput za wužywanje drugich rozšyrjenjow',
 );
 
+/** Spanish (Español)
+ * @author Armando-Martin
+ */
+$messages['es'] = array(
+	'description2-desc' => 'Añade una meta-etiqueta de descripción a las páginas de MediaWiki y en ParserOutput para las otras extensiones a utilizar',
+);
+
 /** Basque (Euskara)
  * @author Theklan
  */
