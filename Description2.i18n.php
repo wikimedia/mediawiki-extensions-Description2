@@ -135,10 +135,11 @@ $messages['id'] = array(
 );
 
 /** Japanese (日本語)
+ * @author Shirayuki
  * @author 青子守歌
  */
 $messages['ja'] = array(
-	'description2-desc' => 'MediaWikiのページとほかの拡張機能が利用するParserOutpuに「description」メタタグを追加',
+	'description2-desc' => 'MediaWikiのページと他の拡張機能が利用するParserOutpuに「description」メタタグを追加',
 );
 
 /** Colognian (Ripoarisch)
