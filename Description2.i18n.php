@@ -234,6 +234,13 @@ $messages['ru'] = array(
 	'description2-desc' => 'Добавляет описательный мета-тег для страниц MediaWiki и ParserOutput, для использования в других расширениях',
 );
 
+/** Slovak (Slovenčina)
+ * @author Helix84
+ */
+$messages['sk'] = array(
+	'description2-desc' => 'Pridáva metaznačku s popisom na stránky MediaWiki a do ParserOutput na využitie pre iné rozšírenia',
+);
+
 /** Tagalog (Tagalog)
  * @author AnakngAraw
  */
