@@ -134,7 +134,7 @@ $messages['id'] = array(
 	'description2-desc' => 'Menambahkan tag meta "description" ke halaman MediaWiki dan ke dalam ParserOutput untuk digunakan ekstensi lain',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Beta16
  */
 $messages['it'] = array(
