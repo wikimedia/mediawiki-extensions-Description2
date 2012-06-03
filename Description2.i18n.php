@@ -149,6 +149,13 @@ $messages['ja'] = array(
 	'description2-desc' => 'MediaWikiのページと他の拡張機能が利用するParserOutpuに「description」メタタグを追加',
 );
 
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'description2-desc' => 'MediaWiki 문서 및 다른 확장 기능을 사용하는 파서 출력에 대한 설명 메타 태그 추가',
+);
+
 /** Colognian (Ripoarisch)
  * @author Purodha
  */
