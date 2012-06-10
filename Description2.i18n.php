@@ -146,7 +146,7 @@ $messages['it'] = array(
  * @author 青子守歌
  */
 $messages['ja'] = array(
-	'description2-desc' => 'MediaWikiのページと他の拡張機能が利用するParserOutpuに「description」メタタグを追加',
+	'description2-desc' => 'MediaWiki のページと、他の拡張機能が使用する ParserOutput に、「description」メタタグを追加する',
 );
 
 /** Korean (한국어)
