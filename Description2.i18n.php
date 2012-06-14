@@ -22,7 +22,7 @@ $messages['qqq'] = array(
 	'description2-desc' => '{{desc}}',
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Xuacu
  */
 $messages['ast'] = array(
@@ -36,14 +36,14 @@ $messages['be-tarask'] = array(
 	'description2-desc' => 'Дадае мэта-тэг апісаньня да старонак MediaWiki і ў ParserOutput для выкарыстаньня іншымі пашырэньнямі',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  */
 $messages['br'] = array(
 	'description2-desc' => 'Ouzhpennañ a ra un deskrivadur meta-tikedennet da bajennoù MediaWiki hag er Parser Output da vezañ implijet gant astennoù all',
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -71,21 +71,21 @@ $messages['dsb'] = array(
 	'description2-desc' => 'Pśidawa metatoflicku "description" bokam MediaWiki a do ParserOutput za wužywanje drugich rozšyrjenjow',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Armando-Martin
  */
 $messages['es'] = array(
 	'description2-desc' => 'Añade una meta-etiqueta de descripción a las páginas de MediaWiki y en ParserOutput para las otras extensiones a utilizar',
 );
 
-/** Basque (Euskara)
+/** Basque (euskara)
  * @author Theklan
  */
 $messages['eu'] = array(
 	'description2-desc' => 'Deskripzio meta-etiketa bat gehitzen die MediaWiki orrialdeei eta ParserOutput-en barruan beste estentsioek erabil dezaten',
 );
 
-/** French (Français)
+/** French (français)
  * @author Peter17
  */
 $messages['fr'] = array(
@@ -120,7 +120,7 @@ $messages['hsb'] = array(
 	'description2-desc' => 'Přidawa metatafličku "description" do stronow MediaWiki a do ParserOutput za wužiwanje druhich rozšěrjenjow',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -177,7 +177,7 @@ $messages['mg'] = array(
 	'description2-desc' => "Mampanampy meta-tag famisavisana amin'ny pejy MediaWiki ary amin'i ParserOutput ho an'ny fanitarana hafa hampiasaina",
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -205,7 +205,7 @@ $messages['nl'] = array(
 	'description2-desc' => "Voegt een metalabel in de beschrijving van MediaWikipagina's toe en in de parseruitvoer om door extensies te laten gebruiken",
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author Sp5uhe
  */
 $messages['pl'] = array(
@@ -220,35 +220,35 @@ $messages['pms'] = array(
 	'description2-desc' => "A gionta na meta-tichëtta ëd descrission a le pàgine ëd MediaWiki ant ël ParserOutput për j'àutre estension da dovré",
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Hamilton Abreu
  */
 $messages['pt'] = array(
 	'description2-desc' => 'Adiciona uma meta tag de descrição às páginas do MediaWiki e ao ParserOutput (isto é, à saída do Analisador Sintáctico) para uso por outras extensões',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Giro720
  */
 $messages['pt-br'] = array(
 	'description2-desc' => 'Adiciona uma meta tag de descrição às páginas do MediaWiki e ao ParserOutput (isto é, à saída do Analisador Sintático) para uso por outras extensões',
 );
 
-/** Tarandíne (Tarandíne)
+/** tarandíne (tarandíne)
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
 	'description2-desc' => "Aggiunge 'nu meta-tag de descrizione a le pàggene de MediaUicchi e jndr'à 'u ParserOutput pe otre estenziune da ausà",
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
 	'description2-desc' => 'Добавляет описательный мета-тег для страниц MediaWiki и ParserOutput, для использования в других расширениях',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  */
 $messages['sk'] = array(
@@ -262,14 +262,14 @@ $messages['tl'] = array(
 	'description2-desc' => 'Nagdaragdag ng isang paglalarawan ng tatak ng meta sa mga pahina ng MediaWiki at papaloob sa ParserOutput para sa ibang mga dugtong na gagamitin',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Hydra
  */
 $messages['zh-hans'] = array(
 	'description2-desc' => '将说明元标记添加到定制页到使用其他扩展名为 ParserOutput',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬) */
+/** Traditional Chinese (‪中文（繁體）‬) */
 $messages['zh-hant'] = array(
 	'description2-desc' => '將說明元標記添加到定製頁到使用其他擴展名為 ParserOutput',
 );
