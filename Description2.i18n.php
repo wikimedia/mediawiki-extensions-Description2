@@ -29,7 +29,7 @@ $messages['ast'] = array(
 	'description2-desc' => 'Amiesta una etiqueta de descripción a les páxines de MediaWiki y a ParserOutput pa que la usen otres estensiones',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author Jim-by
  */
 $messages['be-tarask'] = array(
@@ -64,7 +64,7 @@ $messages['de'] = array(
 	'description2-desc' => 'Fügt dem Seitenquelltext das Meta-Element „description“ hinzu sowie zusätzlich zur Nutzung durch andere Softwareerweiterungen der Parserausgabe',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -92,7 +92,7 @@ $messages['fr'] = array(
 	'description2-desc' => 'Ajoute une méta-étiquette de description aux pages de MediaWiki et à ParserOutput pour les autres extensions à utiliser',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -113,7 +113,7 @@ $messages['he'] = array(
 	'description2-desc' => 'הוספת תגית על לתיאור לדפי מדיה־ויקי ואל ה־ParserOutput לשימוש הרחבות אחרות',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
