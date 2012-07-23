@@ -61,7 +61,7 @@ $messages['cy'] = array(
  * @author Kghbln
  */
 $messages['de'] = array(
-	'description2-desc' => 'Fügt dem Seitenquelltext das Meta-Element „description“ hinzu sowie zusätzlich zur Nutzung durch andere Softwareerweiterungen der Parserausgabe',
+	'description2-desc' => 'Fügt dem Seitenquelltext das Meta-Element „description“ hinzu sowie zusätzlich zur Nutzung durch andere Programmerweiterungen der Parserausgabe',
 );
 
 /** Lower Sorbian (dolnoserbski)
