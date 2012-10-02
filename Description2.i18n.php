@@ -29,7 +29,7 @@ $messages['ast'] = array(
 	'description2-desc' => 'Amiesta una etiqueta de descripción a les páxines de MediaWiki y a ParserOutput pa que la usen otres estensiones',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author Jim-by
  */
 $messages['be-tarask'] = array(
@@ -191,7 +191,7 @@ $messages['ms'] = array(
 	'description2-desc' => 'Membubuh meta-tag penerangan pada laman-laman MediaWiki dan ke dalam ParserOutput untuk digunakan oleh sambungan lain',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
@@ -262,14 +262,14 @@ $messages['tl'] = array(
 	'description2-desc' => 'Nagdaragdag ng isang paglalarawan ng tatak ng meta sa mga pahina ng MediaWiki at papaloob sa ParserOutput para sa ibang mga dugtong na gagamitin',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Hydra
  */
 $messages['zh-hans'] = array(
 	'description2-desc' => '将说明元标记添加到定制页到使用其他扩展名为 ParserOutput',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬) */
+/** Traditional Chinese (中文（繁體）‎) */
 $messages['zh-hant'] = array(
 	'description2-desc' => '將說明元標記添加到定製頁到使用其他擴展名為 ParserOutput',
 );
