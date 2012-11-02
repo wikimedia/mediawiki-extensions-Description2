@@ -262,6 +262,13 @@ $messages['tl'] = array(
 	'description2-desc' => 'Nagdaragdag ng isang paglalarawan ng tatak ng meta sa mga pahina ng MediaWiki at papaloob sa ParserOutput para sa ibang mga dugtong na gagamitin',
 );
 
+/** Ukrainian (українська)
+ * @author Base
+ */
+$messages['uk'] = array(
+	'description2-desc' => 'Додає мета-теґ опису для сторінок MediaWiki і ParserOutput, для використання в інших розширеннях',
+);
+
 /** Simplified Chinese (中文（简体）‎)
  * @author Hydra
  */
