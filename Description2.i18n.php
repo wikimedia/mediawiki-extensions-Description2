@@ -17,9 +17,10 @@ $messages['en'] = array(
 
 /** Message documentation (Message documentation)
  * @author Purodha
+ * @author Shirayuki
  */
 $messages['qqq'] = array(
-	'description2-desc' => '{{desc}}',
+	'description2-desc' => '{{desc|name=Description2|url=http://www.mediawiki.org/wiki/Extension:Description2}}',
 );
 
 /** Asturian (asturianu)
