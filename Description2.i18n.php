@@ -51,6 +51,13 @@ $messages['bs'] = array(
 	'description2-desc' => 'Dodaje opisnu meta-oznaku na MediaWiki stranice i u parserski izlaz (ParserOutput) za korištenje od strane drugih proširenja',
 );
 
+/** Czech (česky)
+ * @author Jezevec
+ */
+$messages['cs'] = array(
+	'description2-desc' => 'Přidá meta-tag popis(description) na stránky MediaWiki a do výstupu parseru pro použití dalšími rozšířeními',
+);
+
 /** Welsh (Cymraeg)
  * @author Pwyll
  */
