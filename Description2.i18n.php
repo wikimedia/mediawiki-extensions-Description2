@@ -199,7 +199,7 @@ $messages['ms'] = array(
 	'description2-desc' => 'Membubuh meta-tag penerangan pada laman-laman MediaWiki dan ke dalam ParserOutput untuk digunakan oleh sambungan lain',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
