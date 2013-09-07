@@ -213,6 +213,13 @@ $messages['nl'] = array(
 	'description2-desc' => "Voegt een metalabel in de beschrijving van MediaWikipagina's toe en in de parseruitvoer om door extensies te laten gebruiken",
 );
 
+/** Occitan (occitan)
+ * @author Cedric31
+ */
+$messages['oc'] = array(
+	'description2-desc' => "Apond una metaetiqueta de descripcion a las paginas de MediaWiki e a ParserOutput per las autras extensions d'utilizar",
+);
+
 /** Polish (polski)
  * @author Sp5uhe
  */
