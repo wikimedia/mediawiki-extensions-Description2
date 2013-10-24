@@ -270,6 +270,13 @@ $messages['sk'] = array(
 	'description2-desc' => 'Pridáva metaznačku s popisom na stránky MediaWiki a do ParserOutput na využitie pre iné rozšírenia',
 );
 
+/** Swedish (svenska)
+ * @author Ainali
+ */
+$messages['sv'] = array(
+	'description2-desc' => 'Lägger till en beskrivningsmetatagg till MediaWikisidor och till ParserOutput som andra tillägg kan använda',
+);
+
 /** Tagalog (Tagalog)
  * @author AnakngAraw
  */
