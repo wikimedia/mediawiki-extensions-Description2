@@ -161,7 +161,7 @@ $messages['ja'] = array(
  * @author 아라
  */
 $messages['ko'] = array(
-	'description2-desc' => 'MediaWiki 문서 및 다른 확장 기능을 사용하는 파서 출력에 대한 설명 메타 태그 추가',
+	'description2-desc' => '미디어위키 문서 및 다른 확장 기능을 사용하는 파서 출력에 대한 설명 메타 태그를 추가합니다',
 );
 
 /** Colognian (Ripoarisch)
