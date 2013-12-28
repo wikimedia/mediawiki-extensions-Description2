@@ -18,9 +18,11 @@ $messages['en'] = array(
 /** Message documentation (Message documentation)
  * @author Purodha
  * @author Shirayuki
+ * @author 아라
  */
 $messages['qqq'] = array(
-	'description2-desc' => '{{desc|name=Description2|url=http://www.mediawiki.org/wiki/Extension:Description2}}',
+	'description2-desc' => "{{desc|name=Description2|url=http://www.mediawiki.org/wiki/Extension:Description2}}
+{{doc-important|Do not translate meta-tag name 'description'}}",
 );
 
 /** Asturian (asturianu)
@@ -161,7 +163,7 @@ $messages['ja'] = array(
  * @author 아라
  */
 $messages['ko'] = array(
-	'description2-desc' => '미디어위키 문서 및 다른 확장 기능을 사용하는 파서 출력에 대한 설명 메타 태그를 추가합니다',
+	'description2-desc' => '미디어위키 문서와 다른 확장 기능을 사용하는 ParserOutput 안에 description 메타 태그를 추가합니다',
 );
 
 /** Colognian (Ripoarisch)
