@@ -95,6 +95,13 @@ $messages['eu'] = array(
 	'description2-desc' => 'Deskripzio meta-etiketa bat gehitzen die MediaWiki orrialdeei eta ParserOutput-en barruan beste estentsioek erabil dezaten',
 );
 
+/** Persian (فارسی)
+ * @author Armin1392
+ */
+$messages['fa'] = array(
+	'description2-desc' => 'اضافه کردن یک توصیف متاتگ برای صفحات مدیاویکی و در کارکرد تجزیه‌کننده برای اسفادهٔ دیگر گستره‌ها',
+);
+
 /** French (français)
  * @author Peter17
  */
