@@ -272,6 +272,13 @@ $messages['ru'] = array(
 	'description2-desc' => 'Добавляет описательный мета-тег для страниц MediaWiki и ParserOutput, для использования в других расширениях',
 );
 
+/** Scots (Scots)
+ * @author John Reid
+ */
+$messages['sco'] = array(
+	'description2-desc' => 'Adds ae descreeption meta-tag til MediaWiki pages an intil the ParserOutput fer ither extensions tae uise',
+);
+
 /** Slovak (slovenčina)
  * @author Helix84
  */
