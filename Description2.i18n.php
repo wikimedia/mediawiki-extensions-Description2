@@ -198,7 +198,7 @@ $messages['mg'] = array(
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
-	'description2-desc' => 'Додава метаознака за опис во страници на МедијаВики и во парсерски извод (ParserOutput) за употреба од други додатоци',
+	'description2-desc' => 'Додава метаознака за опис во страници на МедијаВики и во расчленувачки извод (ParserOutput) за употреба од други додатоци',
 );
 
 /** Malay (Bahasa Melayu)
