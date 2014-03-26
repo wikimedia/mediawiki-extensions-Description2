@@ -276,7 +276,7 @@ $messages['ru'] = array(
  * @author John Reid
  */
 $messages['sco'] = array(
-	'description2-desc' => 'Adds ae descreeption meta-tag til MediaWiki pages an intil the ParserOutput fer ither extensions tae uise',
+	'description2-desc' => 'Eiks ae descreeption meta-tag til MediaWiki pages n intil the ParserOutput fer ither extensions tae uise',
 );
 
 /** Slovak (slovenčina)
