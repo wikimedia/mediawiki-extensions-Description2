@@ -1,0 +1,8 @@
+{
+    "@metadata": {
+        "authors": [
+            "Jezevec"
+        ]
+    },
+    "description2-desc": "Přidá meta-tag popis(description) na stránky MediaWiki a do výstupu parseru pro použití dalšími rozšířeními"
+}

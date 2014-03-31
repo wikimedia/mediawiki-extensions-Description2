@@ -15,13 +15,14 @@ if ( !defined( 'MEDIAWIKI' ) ) die( "This is an extension to the MediaWiki packa
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'Description2',
-	'version' => '0.2',
+	'version' => '0.3.0',
 	'author' => "[http://danf.ca/mw/ Daniel Friesen]",
 	'url' => 'https://www.mediawiki.org/wiki/Extension:Description2',
 	'descriptionmsg' => 'description2-desc',
 );
 
 $dir = dirname( __FILE__ );
+$wgMessagesDirs['Description2'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['Description2'] = $dir . '/Description2.i18n.php';
 $wgExtensionMessagesFiles['Description2Magic'] = $dir . '/Description2.i18n.magic.php';
 
@@ -37,9 +38,9 @@ function efDescription2SetDescription( $parser, $desc ) {
 $wgHooks['ParserAfterTidy'][] = 'egDescription2ParserAfterTidy';
 function egDescription2ParserAfterTidy( &$parser, &$text ) {
 	$desc = '';
-	
+
 	$myText = preg_replace('%<table\b[^>]*+>(?:(?R)|[^<]*+(?:(?!</?table\b)<[^<]*+)*+)*+</table>%i', '', $text);
-	
+
 	$paragraphs = array();
 	if ( preg_match_all('#<p>.*?</p>#is', $myText, $paragraphs) ) {
 		foreach ( $paragraphs[0] as $paragraph ) {
@@ -50,15 +51,15 @@ function egDescription2ParserAfterTidy( &$parser, &$text ) {
 			break;
 		}
 	}
-	
+
 	if ( $desc ) {
 		efDescription2SetDescription( $parser, $desc );
 	}
-	
+
 	return true;
 }
 
-$wgHooks['ParserFirstCallInit'][] = array( 'efDescription2RegisterParser' ); 
+$wgHooks['ParserFirstCallInit'][] = array( 'efDescription2RegisterParser' );
 function efDescription2RegisterParser( &$parser ) {
 	global $wgEnableMetaDescriptionFunctions;
 	if ( !$wgEnableMetaDescriptionFunctions ) {
