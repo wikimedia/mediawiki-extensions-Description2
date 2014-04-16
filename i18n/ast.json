@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Xuacu"
-        ]
-    },
-    "description2-desc": "Amiesta una etiqueta de descripción a les páxines de MediaWiki y a ParserOutput pa que la usen otres estensiones"
+	"@metadata": {
+		"authors": [
+			"Xuacu"
+		]
+	},
+	"description2-desc": "Amiesta una etiqueta de descripción a les páxines de MediaWiki y a ParserOutput pa que la usen otres estensiones"
 }
