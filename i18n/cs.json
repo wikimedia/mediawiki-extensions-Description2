@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jezevec"
+			"Jezevec",
+			"Matěj Grabovský"
 		]
 	},
-	"description2-desc": "Přidá meta-tag popis(description) na stránky MediaWiki a do výstupu parseru pro použití dalšími rozšířeními"
+	"description2-desc": "Přidá meta-tag popis (description) na stránky MediaWiki a do výstupu syntaktického analyzátoru pro použití dalšími rozšířeními"
 }
