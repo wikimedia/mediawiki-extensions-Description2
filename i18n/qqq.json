@@ -3,8 +3,9 @@
 		"authors": [
 			"Purodha",
 			"Shirayuki",
-			"아라"
+			"아라",
+			"Umherirrender"
 		]
 	},
-	"description2-desc": "{{desc|name=Description2|url=http://www.mediawiki.org/wiki/Extension:Description2}}\n{{doc-important|Do not translate meta-tag name 'description'}}"
+	"description2-desc": "{{desc|name=Description2|url=https://www.mediawiki.org/wiki/Extension:Description2}}\n{{doc-important|Do not translate meta-tag name 'description'}}"
 }
