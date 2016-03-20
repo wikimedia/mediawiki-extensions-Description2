@@ -1,4 +1,8 @@
 {
-	"@metadata": [],
-	"description2-desc": "將說明元標記添加到定製頁到使用其他擴展名為 ParserOutput"
+	"@metadata": {
+		"authors": [
+			"LNDDYL"
+		]
+	},
+	"description2-desc": "將 description 中繼標籤新增至 MediaWiki 頁面到使用其他擴展為 ParserOutput"
 }
