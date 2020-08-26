@@ -81,11 +81,6 @@ class Description2 {
 			[ static::class, 'parserFunctionCallback' ],
 			Parser::SFH_OBJECT_ARGS
 		);
-		$parser->setFunctionTagHook(
-			'metadesc',
-			[ static::class, 'tagCallback' ],
-			Parser::SFH_OBJECT_ARGS
-		);
 		return true;
 	}
 
@@ -98,22 +93,6 @@ class Description2 {
 	public static function parserFunctionCallback( Parser $parser, PPFrame $frame, $args ) {
 		$desc = isset( $args[0] ) ? $frame->expand( $args[0] ) : '';
 		self::setDescription( $parser, $desc );
-		return '';
-	}
-
-	/**
-	 * @param Parser $parser The parser.
-	 * @param PPFrame $frame Not used.
-	 * @param string $content The contents of the tag (if any).
-	 * @param string[] $attributes The tag attributes (if any).
-	 * @return string
-	 */
-	public static function tagCallback( Parser $parser, PPFrame $frame, $content, $attributes ) {
-		$contentAttr = isset( $attributes['content'] ) ? $attributes['content'] : null;
-		$desc = isset( $content ) ? $content : $contentAttr;
-		if ( isset( $desc ) ) {
-			self::setDescription( $parser, $desc );
-		}
 		return '';
 	}
 
