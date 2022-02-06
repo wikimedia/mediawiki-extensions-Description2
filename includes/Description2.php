@@ -27,10 +27,18 @@ class Description2 {
 	 */
 	public static function setDescription( Parser $parser, $desc ) {
 		$parserOutput = $parser->getOutput();
-		if ( $parserOutput->getProperty( 'description' ) !== false ) {
-			return;
+		if ( method_exists( $parserOutput, 'getPageProperty' ) ) {
+			// MW 1.38+
+			if ( $parserOutput->getPageProperty( 'description' ) !== false ) {
+				return;
+			}
+			$parserOutput->setPageProperty( 'description', $desc );
+		} else {
+			if ( $parserOutput->getProperty( 'description' ) !== false ) {
+				return;
+			}
+			$parserOutput->setProperty( 'description', $desc );
 		}
-		$parserOutput->setProperty( 'description', $desc );
 	}
 
 	/**
@@ -102,7 +110,12 @@ class Description2 {
 	 */
 	public static function onOutputPageParserOutput( OutputPage &$out, ParserOutput $parserOutput ) {
 		// Export the description from the main parser output into the OutputPage
-		$description = $parserOutput->getProperty( 'description' );
+		if ( method_exists( $parserOutput, 'getPageProperty' ) ) {
+			// MW 1.38+
+			$description = $parserOutput->getPageProperty( 'description' );
+		} else {
+			$description = $parserOutput->getProperty( 'description' );
+		}
 		if ( $description !== false ) {
 			$out->addMeta( 'description', $description );
 		}
