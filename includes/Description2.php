@@ -29,8 +29,7 @@ class Description2 {
 		$parserOutput = $parser->getOutput();
 		if ( method_exists( $parserOutput, 'getPageProperty' ) ) {
 			// MW 1.38+
-			// T301915
-			if ( ( $parserOutput->getPageProperty( 'description' ) ?? false ) !== false ) {
+			if ( $parserOutput->getPageProperty( 'description' ) !== null ) {
 				return;
 			}
 			$parserOutput->setPageProperty( 'description', $desc );
@@ -113,12 +112,14 @@ class Description2 {
 		// Export the description from the main parser output into the OutputPage
 		if ( method_exists( $parserOutput, 'getPageProperty' ) ) {
 			// MW 1.38+
-			// T301915
-			$description = $parserOutput->getPageProperty( 'description' ) ?? false;
+			$description = $parserOutput->getPageProperty( 'description' );
 		} else {
 			$description = $parserOutput->getProperty( 'description' );
+			if ( $description === false ) {
+				$description = null;
+			}
 		}
-		if ( $description !== false ) {
+		if ( $description !== null ) {
 			$out->addMeta( 'description', $description );
 		}
 	}
