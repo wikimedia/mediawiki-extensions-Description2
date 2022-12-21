@@ -1,0 +1,6 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"description2-desc": "Dodaje metaoznaku opisa na Medijaviki stranice i u ParserOutput za upotrebu od strane drugih proširenja"
+}
