@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vlad5250"
+			"Winston Sung"
 		]
 	},
 	"description2-desc": "Dodaje metaoznaku za opis u MediaWiki stranice i u parserski izlaz (ParserOutput) za uporabu od strane drugih dodataka"
