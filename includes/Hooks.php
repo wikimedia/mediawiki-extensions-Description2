@@ -31,6 +31,9 @@ class Hooks implements
 	/** @var DescriptionProvider */
 	private DescriptionProvider $descriptionProvider;
 
+	/** @var int */
+	private int $maxChars;
+
 	/**
 	 * @param ConfigFactory $configFactory
 	 */
@@ -40,6 +43,7 @@ class Hooks implements
 	) {
 		$this->config = $configFactory->makeConfig( 'Description2' );
 		$this->descriptionProvider = $descriptionProvider;
+		$this->maxChars = $this->config->get( 'DescriptionMaxChars' );
 	}
 
 	/**
@@ -69,11 +73,21 @@ class Hooks implements
 		}
 
 		$desc = $this->descriptionProvider->derive( $text );
-
-		if ( $desc ) {
-			Description2::setDescription( $parser, $desc );
+		if ( !$desc ) {
+			return true;
 		}
 
+		if ( $this->maxChars > 0 ) {
+			$truncated = Description2::getFirstChars( $desc, $this->maxChars );
+			if ( $truncated !== $desc ) {
+				$desc = $truncated;
+				if ( !preg_match( '/\p{P}$/u', $truncated ) ) {
+					$desc = $truncated . wfMessage( 'ellipsis' )->text();
+				}
+			}
+		}
+
+		Description2::setDescription( $parser, $desc );
 		return true;
 	}
 

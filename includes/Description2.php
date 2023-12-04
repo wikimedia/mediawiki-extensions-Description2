@@ -48,4 +48,36 @@ class Description2 {
 		self::setDescription( $parser, $desc );
 		return '';
 	}
+
+	/**
+	 * Returns no more than a requested number of characters, preserving words.
+	 *
+	 * Borrowed from TextExtracts.
+	 *
+	 * @param string $text Source plain text to extract from. HTML tags should be removed by the description provider.
+	 * @param int $requestedLength Maximum number of characters to return
+	 * @return string
+	 */
+	public static function getFirstChars( string $text, int $requestedLength ) {
+		if ( $requestedLength <= 0 ) {
+			return '';
+		}
+
+		$length = mb_strlen( $text );
+		if ( $length <= $requestedLength ) {
+			return $text;
+		}
+
+		// The following (although in somewhat backwards order) cuts the text at given length and restores the end if it
+		// has been cut, with the ungreedy pattern always matching a single word built of word characters (no
+		// punctuation) and/or forward slashes.
+		$pattern = '/^[\w\/]*/su';
+		preg_match( $pattern, mb_substr( $text, $requestedLength ), $m );
+		$truncatedText = mb_substr( $text, 0, $requestedLength ) . $m[0];
+		if ( $truncatedText === $text ) {
+			return $text;
+		}
+
+		return trim( $truncatedText );
+	}
 }
