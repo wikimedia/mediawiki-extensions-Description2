@@ -17,8 +17,8 @@
 	"ConfigRegistry": {
 		"Description2": "GlobalVarConfig::newInstance"
 	},
-	"AutoloadClasses": {
-		"MediaWiki\\Extension\\Description2\\Description2": "includes/Description2.php"
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\Description2\\": "includes/"
 	},
 	"ExtensionMessagesFiles": {
 		"Description2Magic": "Description2.i18n.magic.php"
