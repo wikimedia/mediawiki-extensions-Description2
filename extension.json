@@ -9,7 +9,7 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.31.0"
+		"MediaWiki": ">= 1.35.0"
 	},
 	"config": {
 		"EnableMetaDescriptionFunctions": false
@@ -28,10 +28,18 @@
 			"i18n"
 		]
 	},
+	"HookHandlers": {
+		"Description2": {
+			"class": "MediaWiki\\Extension\\Description2\\Hooks",
+			"services": [
+				"ConfigFactory"
+			]
+		}
+	},
 	"Hooks": {
-		"OutputPageParserOutput": "MediaWiki\\Extension\\Description2\\Description2::onOutputPageParserOutput",
-		"ParserAfterTidy": "MediaWiki\\Extension\\Description2\\Description2::onParserAfterTidy",
-		"ParserFirstCallInit": "MediaWiki\\Extension\\Description2\\Description2::onParserFirstCallInit"
+		"OutputPageParserOutput": "Description2",
+		"ParserAfterTidy": "Description2",
+		"ParserFirstCallInit": "Description2"
 	},
 	"manifest_version": 1
 }
