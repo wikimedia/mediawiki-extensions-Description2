@@ -49,6 +49,25 @@ class Hooks implements
 	 * @return bool
 	 */
 	public function onParserAfterTidy( $parser, &$text ) {
+		$parserOutput = $parser->getOutput();
+
+		// Avoid running the algorithm on interface messages which may waste time
+		if ( $parser->getOptions()->getInterfaceMessage() ) {
+			return true;
+		}
+
+		// Avoid running the algorithm multiple times if we already have determined the description. This may happen
+		// on file pages.
+		if ( method_exists( $parserOutput, 'getPageProperty' ) ) {
+			// MW 1.38+
+			$description = $parserOutput->getPageProperty( 'description' );
+		} else {
+			$description = $parserOutput->getProperty( 'description' );
+		}
+		if ( $description ) {
+			return true;
+		}
+
 		$desc = $this->descriptionProvider->derive( $text );
 
 		if ( $desc ) {
