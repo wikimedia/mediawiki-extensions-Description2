@@ -17,6 +17,9 @@
 	"ConfigRegistry": {
 		"Description2": "GlobalVarConfig::newInstance"
 	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\Description2\\": "includes/"
 	},
@@ -32,7 +35,8 @@
 		"Description2": {
 			"class": "MediaWiki\\Extension\\Description2\\Hooks",
 			"services": [
-				"ConfigFactory"
+				"ConfigFactory",
+				"Description2.DescriptionProvider"
 			]
 		}
 	},

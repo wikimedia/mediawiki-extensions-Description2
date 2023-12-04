@@ -25,15 +25,21 @@ class Hooks implements
 	\MediaWiki\Hook\OutputPageParserOutputHook
 {
 
+	/** @var Config */
 	private Config $config;
+
+	/** @var DescriptionProvider */
+	private DescriptionProvider $descriptionProvider;
 
 	/**
 	 * @param ConfigFactory $configFactory
 	 */
 	public function __construct(
-		ConfigFactory $configFactory
+		ConfigFactory $configFactory,
+		DescriptionProvider $descriptionProvider
 	) {
 		$this->config = $configFactory->makeConfig( 'Description2' );
+		$this->descriptionProvider = $descriptionProvider;
 	}
 
 	/**
@@ -43,22 +49,7 @@ class Hooks implements
 	 * @return bool
 	 */
 	public function onParserAfterTidy( $parser, &$text ) {
-		$desc = '';
-
-		$pattern = '%<table\b[^>]*+>(?:(?R)|[^<]*+(?:(?!</?table\b)<[^<]*+)*+)*+</table>%i';
-		$myText = preg_replace( $pattern, '', $text );
-
-		$paragraphs = [];
-		if ( preg_match_all( '#<p>.*?</p>#is', $myText, $paragraphs ) ) {
-			foreach ( $paragraphs[0] as $paragraph ) {
-				$paragraph = trim( strip_tags( $paragraph ) );
-				if ( !$paragraph ) {
-					continue;
-				}
-				$desc = $paragraph;
-				break;
-			}
-		}
+		$desc = $this->descriptionProvider->derive( $text );
 
 		if ( $desc ) {
 			Description2::setDescription( $parser, $desc );

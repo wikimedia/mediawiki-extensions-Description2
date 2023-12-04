@@ -17,7 +17,6 @@ use PPFrame;
  */
 
 class Description2 {
-
 	/**
 	 * @param Parser $parser The parser.
 	 * @param string $desc The description text.
