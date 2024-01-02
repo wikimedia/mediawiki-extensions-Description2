@@ -2,7 +2,14 @@
 
 namespace MediaWiki\Extension\Description2;
 
+use Config;
+
 class SimpleDescriptionProvider implements DescriptionProvider {
+	/**
+	 * @param Config $config
+	 */
+	public function __construct( Config $config ) {
+	}
 
 	/**
 	 * Extracts description from the HTML representation of a page.
