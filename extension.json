@@ -12,7 +12,8 @@
 		"MediaWiki": ">= 1.35.0"
 	},
 	"config": {
-		"EnableMetaDescriptionFunctions": false
+		"EnableMetaDescriptionFunctions": false,
+		"DescriptionMaxChars": 300
 	},
 	"ConfigRegistry": {
 		"Description2": "GlobalVarConfig::newInstance"
