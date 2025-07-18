@@ -36,6 +36,7 @@ class Hooks implements
 
 	/**
 	 * @param ConfigFactory $configFactory
+	 * @param DescriptionProvider $descriptionProvider
 	 */
 	public function __construct(
 		ConfigFactory $configFactory,
@@ -62,12 +63,7 @@ class Hooks implements
 
 		// Avoid running the algorithm multiple times if we already have determined the description. This may happen
 		// on file pages.
-		if ( method_exists( $parserOutput, 'getPageProperty' ) ) {
-			// MW 1.38+
-			$description = $parserOutput->getPageProperty( 'description' );
-		} else {
-			$description = $parserOutput->getProperty( 'description' );
-		}
+		$description = $parserOutput->getPageProperty( 'description' );
 		if ( $description ) {
 			return true;
 		}
@@ -114,15 +110,7 @@ class Hooks implements
 	 */
 	public function onOutputPageParserOutput( $out, $parserOutput ): void {
 		// Export the description from the main parser output into the OutputPage
-		if ( method_exists( $parserOutput, 'getPageProperty' ) ) {
-			// MW 1.38+
-			$description = $parserOutput->getPageProperty( 'description' );
-		} else {
-			$description = $parserOutput->getProperty( 'description' );
-			if ( $description === false ) {
-				$description = null;
-			}
-		}
+		$description = $parserOutput->getPageProperty( 'description' );
 		if ( $description !== null ) {
 			$out->addMeta( 'description', $description );
 		}
