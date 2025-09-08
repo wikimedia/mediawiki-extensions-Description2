@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
 <ruleset name="MediaWiki">
-	<rule ref="./vendor/mediawiki/mediawiki-codesniffer/MediaWiki" />
+	<rule ref="./vendor/mediawiki/mediawiki-codesniffer/MediaWiki">
+		<exclude name="MediaWiki.Commenting.ClassAnnotations.UnrecognizedAnnotation" />
+	</rule>
 	<file>.</file>
 </ruleset>
