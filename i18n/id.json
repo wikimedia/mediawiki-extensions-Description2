@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"IvanLanin"
+			"IvanLanin",
+			"Penyuwangi"
 		]
 	},
-	"description2-desc": "Menambahkan tag meta \"description\" ke halaman MediaWiki dan ke dalam ParserOutput untuk digunakan ekstensi lain"
+	"description2-desc": "Menambahkan tanda meta \"description\" ke halaman MediaWiki dan ke dalam ParserOutput untuk digunakan ekstensi lain"
 }
