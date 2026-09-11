@@ -3,7 +3,6 @@
 namespace MediaWiki\Extension\Description2;
 
 use Config;
-use ConfigFactory;
 use OutputPage;
 use Parser;
 use ParserOutput;
@@ -35,14 +34,14 @@ class Hooks implements
 	private int $maxChars;
 
 	/**
-	 * @param ConfigFactory $configFactory
+	 * @param Config $config
 	 * @param DescriptionProvider $descriptionProvider
 	 */
 	public function __construct(
-		ConfigFactory $configFactory,
+		Config $config,
 		DescriptionProvider $descriptionProvider
 	) {
-		$this->config = $configFactory->makeConfig( 'Description2' );
+		$this->config = $config;
 		$this->descriptionProvider = $descriptionProvider;
 		$this->maxChars = $this->config->get( 'DescriptionMaxChars' );
 	}

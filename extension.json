@@ -36,9 +36,6 @@
 			".sortkey"
 		]
 	},
-	"ConfigRegistry": {
-		"Description2": "MediaWiki\\Config\\GlobalVarConfig::newInstance"
-	},
 	"ServiceWiringFiles": [
 		"includes/ServiceWiring.php"
 	],
@@ -57,7 +54,7 @@
 		"Description2": {
 			"class": "MediaWiki\\Extension\\Description2\\Hooks",
 			"services": [
-				"ConfigFactory",
+				"MainConfig",
 				"Description2.DescriptionProvider"
 			]
 		}
